@@ -18,6 +18,7 @@ import {
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
+import DemoChat from './components/DemoChat';
 
 export default function App() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -333,6 +334,67 @@ export default function App() {
                   Forward your calls to your dedicated VoxLocal phone number and watch the automated lead booking magic happen.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section - Live Browser Demo Call Simulator */}
+      <section id="demo" className="py-24 bg-slate-100 border-t border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            {/* Left Side Info */}
+            <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
+              <div className="inline-flex items-center space-x-2 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1 text-indigo-750 shadow-sm">
+                <Sparkles className="w-4 h-4 text-indigo-500 animate-pulse" />
+                <span className="text-xs font-bold uppercase tracking-wider">Try It Free Today</span>
+              </div>
+              
+              <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-none">
+                Experience the Voice <br className="hidden sm:inline" />
+                Agent in Action.
+              </h2>
+              
+              <p className="text-lg text-slate-600 leading-relaxed">
+                We've ported our BrightSmile Dental scenario directly to the browser. Turn on your speakers, place a virtual call, and talk or type with Lucy, our intelligent AI receptionist. 
+              </p>
+              
+              <div className="space-y-4 max-w-lg mx-auto lg:mx-0">
+                <div className="flex items-start space-x-3.5 text-left">
+                  <div className="bg-indigo-600/10 p-2.5 rounded-xl text-indigo-600 shrink-0">
+                    <Check className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900">Adaptive Dialogue Flow</h4>
+                    <p className="text-sm text-slate-500 leading-relaxed">AI automatically registers client records, understands booking intents, and responds in context.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3.5 text-left">
+                  <div className="bg-indigo-600/10 p-2.5 rounded-xl text-indigo-600 shrink-0">
+                    <Check className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900">Speech-to-Text & Text-to-Speech</h4>
+                    <p className="text-sm text-slate-500 leading-relaxed">Experience zero latency voice interaction using high fidelity browser audio synthesizers.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3.5 text-left">
+                  <div className="bg-indigo-600/10 p-2.5 rounded-xl text-indigo-600 shrink-0">
+                    <Check className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900">Instant Lead Sync</h4>
+                    <p className="text-sm text-slate-500 leading-relaxed">Saves booking information, summarizes call conversations, and links directly to CRM.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side Phone Simulator Widget */}
+            <div className="lg:col-span-5 flex justify-center">
+              <DemoChat />
             </div>
           </div>
         </div>

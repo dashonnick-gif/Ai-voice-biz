@@ -2,6 +2,8 @@
 
 These posts are designed to be shared on LinkedIn, Facebook, and Instagram to drive traffic to the VoxLocal landing page.
 
+> **Note**: Replace `{{WEBSITE_URL}}` with the live public URL before posting. (Target: `https://voxlocal.vercel.app` or the URL provided by the Product Engineer once deployment is complete.)
+
 ---
 
 ## Post 1: The "Missed Call" Reality Check (LinkedIn/Facebook)
@@ -18,7 +20,7 @@ Meet **VoxLocal**. Our AI-powered voice agents answer your phone 24/7, book appo
 
 Stop missing leads. Start growing. 
 
-Check out our demo at [Link to Website] 🚀
+Check out our demo at {{WEBSITE_URL}} 🚀
 
 #LocalBusiness #AIReceptionist #VoxLocal #SmallBizGrowth #DentalMarketing #HVACLife
 
@@ -41,7 +43,7 @@ VoxLocal uses state-of-the-art conversational AI that sounds warm, professional,
 
 Don't believe us? Listen to a sample call on our website and hear the difference for yourself. 🎧
 
-Try it free for 7 days: [Link to Website]
+Try it free for 7 days: {{WEBSITE_URL}}
 
 #AI #VoiceAI #CustomerExperience #LocalBusiness #SalonOwner #AutoRepair
 
@@ -61,6 +63,6 @@ VoxLocal never takes a sick day, never goes on lunch, and never puts a customer 
 
 Is your front desk on autopilot yet? ✈️
 
-See how it works: [Link to Website]
+See how it works: {{WEBSITE_URL}}
 
 #CaseStudy #SuccessStory #DentalClinic #BusinessAutomation #VoxLocal

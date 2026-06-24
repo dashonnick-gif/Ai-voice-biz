@@ -42,7 +42,7 @@ VoxLocal doesn't just take messages; it asks the right questions. It gathers nam
 ## 5. How It Works
 1.  **Customize Your Agent**: Tell us about your business, your hours, and your services.
 2.  **Connect Your Calendar**: Link your booking software so VoxLocal knows when you're free.
-3.  **Activate Your Line**: Forward your calls to your dedicated VoxLocal number and watch the magic happen.
+3.  **Activate Your Line**: Forward your calls to your dedicated VoxLocal number and watch the magic happen. Getting started takes under 10 minutes.
 
 ---
 
@@ -79,5 +79,5 @@ VoxLocal doesn't just take messages; it asks the right questions. It gathers nam
 
 ## 7. Final CTA
 *   **Headline**: Give Your Business the Voice It Deserves.
-*   **Copy**: Join 100+ local businesses that have stopped missing calls and started growing with VoxLocal.
+*   **Copy**: Join local businesses that have stopped missing calls and started growing with VoxLocal.
 *   **CTA Button**: [Get Started Today]

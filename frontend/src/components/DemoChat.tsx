@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { 
   Phone, 
   PhoneOff, 
@@ -9,11 +9,7 @@ import {
   Send, 
   RefreshCw, 
   CheckCircle, 
-  Play, 
-  MessageSquare,
-  User,
-  Clock,
-  Sparkles
+  Play
 } from 'lucide-react';
 
 interface Message {
@@ -33,10 +29,10 @@ export default function DemoChat() {
   const [speechEnabled, setSpeechEnabled] = useState(false);
   const [duration, setDuration] = useState(0);
   const [suggestedReplies, setSuggestedReplies] = useState<string[]>([]);
-  const [agentName, setAgentName] = useState('Lucy (AI)');
+  const [agentName] = useState('Lucy (AI)');
   
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // Auto-scroll chat to bottom
   useEffect(() => {

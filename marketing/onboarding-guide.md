@@ -20,7 +20,7 @@ VoxLocal can book appointments directly for you.
 ## Step 3: Customize Your AI Assistant
 Make the assistant feel like part of your team.
 *   **Choose a Voice**: Select from our range of professional and friendly voices.
-*   **Set the Greeting**: e.g., "Welcome to Smith Family Dental, how can I help you today?"
+*   **Set the Greeting**: e.g., "Welcome to BrightSmile Dental Clinic, how can I help you today?"
 *   **Knowledge Base**: Upload any specific documents or lists the AI should know.
 
 ## Step 4: Activate Your Line
@@ -37,7 +37,7 @@ There are two ways to use VoxLocal:
 ### Need Help?
 Our support team is available 24/7.
 *   **Email**: support@voxlocal.com
-*   **Phone**: [Support Phone Number]
+*   **Phone**: (512) 555-VOXL (pending — update once support line is provisioned)
 *   **Live Chat**: Available in your VoxLocal Dashboard.
 
 **VoxLocal — Your business, always open.**

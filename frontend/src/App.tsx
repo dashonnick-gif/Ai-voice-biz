@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   Phone, 
   Clock, 
@@ -9,22 +9,33 @@ import {
   Calendar, 
   Brain, 
   Database, 
-  ArrowRight, 
   ShieldAlert, 
-  TrendingUp,
-  MessageSquare,
   Sparkles,
-  Award,
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
 import DemoChat from './components/DemoChat';
+import LeadCaptureModal from './components/LeadCaptureModal';
 
 export default function App() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalContext, setModalContext] = useState<'demo' | 'trial' | 'support' | 'general'>('general');
+  const [modalPlanName, setModalPlanName] = useState<string | undefined>(undefined);
 
   const toggleFaq = (index: number) => {
     setActiveFaq(activeFaq === index ? null : index);
+  };
+
+  const openModal = (context: 'demo' | 'trial' | 'support' | 'general', planName?: string) => {
+    setModalContext(context);
+    setModalPlanName(planName);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setModalPlanName(undefined);
   };
 
   const faqs = [
@@ -107,12 +118,12 @@ export default function App() {
             >
               Start Your Free Trial
             </a>
-            <a 
-              href="mailto:demo@voxlocal.ai?subject=Requesting Live Demo" 
+            <button 
+              onClick={() => openModal('demo')}
               className="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-slate-600 text-white px-8 py-4 rounded-2xl text-base font-bold transition-all duration-200 hover:-translate-y-0.5 active:scale-95"
             >
               Book a Live Demo
-            </a>
+            </button>
           </div>
 
           {/* Social Proof */}
@@ -444,12 +455,12 @@ export default function App() {
                   </li>
                 </ul>
               </div>
-              <a 
-                href="mailto:trial@voxlocal.ai?subject=Sign up for Starter Trial" 
-                className="block text-center bg-slate-100 hover:bg-slate-200 text-slate-900 py-4 px-6 rounded-2xl font-bold text-sm transition-colors duration-200"
+              <button 
+                onClick={() => openModal('trial', 'Starter')}
+                className="block text-center bg-slate-100 hover:bg-slate-200 text-slate-900 py-4 px-6 rounded-2xl font-bold text-sm transition-colors duration-200 w-full"
               >
                 Start Free Trial
-              </a>
+              </button>
             </div>
 
             {/* Pro Tier (Popular) */}
@@ -487,12 +498,12 @@ export default function App() {
                   </li>
                 </ul>
               </div>
-              <a 
-                href="mailto:trial@voxlocal.ai?subject=Sign up for Pro Trial" 
-                className="block text-center bg-indigo-600 hover:bg-indigo-500 text-white py-4 px-6 rounded-2xl font-bold text-sm shadow-lg shadow-indigo-500/20 transition-colors duration-200"
+              <button 
+                onClick={() => openModal('trial', 'Pro')}
+                className="block text-center bg-indigo-600 hover:bg-indigo-500 text-white py-4 px-6 rounded-2xl font-bold text-sm shadow-lg shadow-indigo-500/20 transition-colors duration-200 w-full"
               >
                 Start Free Trial
-              </a>
+              </button>
             </div>
 
             {/* Business Tier */}
@@ -527,12 +538,12 @@ export default function App() {
                   </li>
                 </ul>
               </div>
-              <a 
-                href="mailto:trial@voxlocal.ai?subject=Sign up for Business Trial" 
-                className="block text-center bg-slate-100 hover:bg-slate-200 text-slate-900 py-4 px-6 rounded-2xl font-bold text-sm transition-colors duration-200"
+              <button 
+                onClick={() => openModal('trial', 'Business')}
+                className="block text-center bg-slate-100 hover:bg-slate-200 text-slate-900 py-4 px-6 rounded-2xl font-bold text-sm transition-colors duration-200 w-full"
               >
                 Start Free Trial
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -599,12 +610,12 @@ export default function App() {
             >
               Get Started Today
             </a>
-            <a 
-              href="mailto:demo@voxlocal.ai" 
+            <button 
+              onClick={() => openModal('demo')}
               className="w-full sm:w-auto bg-transparent hover:bg-slate-800/50 border border-slate-700 hover:border-slate-600 text-white px-8 py-4 rounded-2xl text-base font-bold transition-all duration-200 active:scale-95"
             >
               Contact Sales
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -622,10 +633,17 @@ export default function App() {
           <div className="flex space-x-8">
             <a href="#problem" className="hover:text-slate-400 transition-colors">Privacy Policy</a>
             <a href="#features" className="hover:text-slate-400 transition-colors">Terms of Service</a>
-            <a href="mailto:support@voxlocal.ai" className="hover:text-slate-400 transition-colors">Contact Support</a>
+            <button onClick={() => openModal('support')} className="hover:text-slate-400 transition-colors">Contact Support</button>
           </div>
         </div>
       </footer>
+
+      <LeadCaptureModal 
+        isOpen={modalOpen} 
+        onClose={closeModal} 
+        context={modalContext}
+        planName={modalPlanName}
+      />
     </div>
   );
 }

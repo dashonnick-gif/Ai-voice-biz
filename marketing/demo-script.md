@@ -1,6 +1,6 @@
-# VoxLocal Demo Script: Smith Family Dental
+# VoxLocal Demo Script: BrightSmile Dental Clinic
 
-**Scenario**: A potential patient, Sarah, calls Smith Family Dental on a Saturday afternoon when the clinic is closed. VoxLocal, the AI receptionist, answers the call.
+**Scenario**: A potential patient, Sarah, calls BrightSmile Dental Clinic on a Saturday afternoon when the clinic is closed. VoxLocal, the AI receptionist, answers the call.
 
 ---
 
@@ -8,11 +8,11 @@
 
 **[Phone Ringing]**
 
-**VoxLocal**: "Thank you for calling Smith Family Dental. This is your AI assistant. How can I help you today?"
+**VoxLocal**: "Thank you for calling BrightSmile Dental Clinic. This is your AI assistant. How can I help you today?"
 
 **Sarah**: "Hi, I'd like to book an appointment for a cleaning. I have a bit of a toothache too."
 
-**VoxLocal**: "I'm sorry to hear about your toothache, Sarah. We can certainly get you scheduled for a cleaning and have the doctor take a look at that tooth. Are you a new or returning patient at Smith Family Dental?"
+**VoxLocal**: "I'm sorry to hear about your toothache, Sarah. We can certainly get you scheduled for a cleaning and have the doctor take a look at that tooth. Are you a new or returning patient at BrightSmile Dental Clinic?"
 
 **Sarah**: "I'm a new patient."
 
@@ -20,11 +20,11 @@
 
 **Sarah**: "My name is Sarah Miller, and my number is 555-0123."
 
-**VoxLocal**: "Got it, Sarah. Thank you. Now, let's look at the schedule. Dr. Smith has openings this coming Tuesday, June 16th. We have slots at 10:00 AM, 1:30 PM, and 4:00 PM. Do any of those work for you?"
+**VoxLocal**: "Got it, Sarah. Thank you. Now, let's look at the schedule. Dr. Aris has openings this coming Tuesday. We have slots at 10:00 AM, 1:30 PM, and 4:00 PM. Do any of those work for you?"
 
 **Sarah**: "Tuesday at 1:30 PM sounds perfect."
 
-**VoxLocal**: "Excellent choice. Just to confirm, I have you down for a cleaning and a toothache exam with Dr. Smith this Tuesday, June 16th, at 1:30 PM. Does that all look correct?"
+**VoxLocal**: "Excellent choice. Just to confirm, I have you down for a cleaning and a toothache exam with Dr. Aris this Tuesday at 1:30 PM. Does that all look correct?"
 
 **Sarah**: "Yes, that's right."
 

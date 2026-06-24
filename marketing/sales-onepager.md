@@ -1,7 +1,7 @@
 # VoxLocal Sales One-Pager
 
 ## 📞 Stop Missing Calls. Start Growing.
-**The 24/7 AI Receptionist for [Business Name]**
+**The 24/7 AI Receptionist for Local Service Businesses**
 
 ---
 
@@ -43,7 +43,7 @@ VoxLocal is an AI-powered voice agent that lives on your business phone line. It
 
 ### **Ready to grow?**
 Don't let another lead slip through your fingers.
-**Visit www.VoxLocal.com or Call us at [Phone Number]**
+**Visit www.voxlocal.com or email us at hello@voxlocal.com**
 
 ---
 *VoxLocal — Your business, always open.*
